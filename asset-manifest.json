@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/43-days-till-christmas/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/43-days-till-christmas/static/js/main.579f435f.chunk.js",
+    "main.js.map": "/43-days-till-christmas/static/js/main.579f435f.chunk.js.map",
+    "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.a42437c9.js",
+    "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.a42437c9.js.map",
+    "static/js/2.0b1be4ef.chunk.js": "/43-days-till-christmas/static/js/2.0b1be4ef.chunk.js",
+    "static/js/2.0b1be4ef.chunk.js.map": "/43-days-till-christmas/static/js/2.0b1be4ef.chunk.js.map",
+    "static/js/3.562bddad.chunk.js": "/43-days-till-christmas/static/js/3.562bddad.chunk.js",
+    "static/js/3.562bddad.chunk.js.map": "/43-days-till-christmas/static/js/3.562bddad.chunk.js.map",
+    "index.html": "/43-days-till-christmas/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/43-days-till-christmas/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.0b1be4ef.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.0b1be4ef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a42437c9.js",
+    "static/js/2.0b1be4ef.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.579f435f.chunk.js"
+  ]
+}
