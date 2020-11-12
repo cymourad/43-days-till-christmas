@@ -9,7 +9,7 @@ import monthsOfTheYear from "../resources/monthsOfTheYear";
 
 const DayButton = ({ month, day, disabled, onClick }) => {
 	return (
-		<button onClick={disabled ? () => {} : onClick} disabled={disabled}>
+		<button onClick={onClick} disabled={disabled}>
 			{monthsOfTheYear[month].substring(0, 3)} {day}
 		</button>
 	);

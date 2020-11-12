@@ -28,6 +28,27 @@ const theotokia = [
 		verseChapter: 1,
 		verseNumber: 1,
 	},
+	{
+		month: monthNumber.January,
+		day: 2,
+		theotokiaVerse: "and exalt Him",
+		theotokiaDay: dayNumber.Friday,
+		theotokiaPart: 1,
+		verseBody: "verseBody",
+		verseBook: "gn",
+		verseChapter: 1,
+		verseNumber: 1,
+	},
 ];
 
 export default theotokia;
+
+export const partsPerTheotokia = {
+	0: 18, // Sunday
+	1: 9, // Monday
+	2: 7, // Tuesday
+	3: 7, // Wednesday
+	4: 9, // Thursday
+	5: 7, // Friday
+	6: 9, // Saturday
+};
