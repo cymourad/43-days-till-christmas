@@ -19,7 +19,11 @@ const VerseGame = ({ day, month }) => {
 	return (
 		<div>
 			<MainVerse text={info.body} />
-			<BibleRefPicker />
+			<BibleRefPicker
+				correctBook={info.book}
+				correctChapter={info.chapter}
+				correctNumber={info.number}
+			/>
 		</div>
 	);
 };
