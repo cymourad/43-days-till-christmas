@@ -6,12 +6,19 @@
 import React from "react";
 
 import monthsOfTheYear from "../resources/monthsOfTheYear";
+import Button from "@material-ui/core/Button";
 
-const DayButton = ({ month, day, disabled, onClick }) => {
+const DayButton = ({ month, day, disabled, onClick, primary }) => {
 	return (
-		<button onClick={onClick} disabled={disabled}>
+		<Button
+			style={{ margin: 5 }}
+			onClick={onClick}
+			variant={primary ? "contained" : "text"}
+			color={primary ? "primary" : "default"}
+			disabled={disabled}
+		>
 			{monthsOfTheYear[month].substring(0, 3)} {day}
-		</button>
+		</Button>
 	);
 };
 

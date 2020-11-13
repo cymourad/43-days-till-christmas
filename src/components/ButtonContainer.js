@@ -9,7 +9,7 @@ import DayButton from "./DayButton";
 import theotokia from "../resources/theotokia";
 import { monthNumber } from "../resources/monthsOfTheYear";
 
-const ButtonCotainer = ({ setCurDay, setCurMonth }) => {
+const ButtonCotainer = ({ curDay, curMonth, setCurDay, setCurMonth }) => {
 	const today = new Date();
 	const todayYear = today.getFullYear(); // returns number --> yyyy
 	const todayMonth = today.getMonth(); // returns number from 0 to 11
@@ -89,6 +89,7 @@ const ButtonCotainer = ({ setCurDay, setCurMonth }) => {
 					day={info.day}
 					onClick={() => setCurDate(info.month, info.day)}
 					disabled={isDisabled(info.month, info.day)}
+					primary={info.month == curMonth && info.day == curDay}
 				/>
 			))}
 		</div>

@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+
+import "./App.css";
+
+import { isInCurAdvent } from "./helpers/dateHelper";
+
 import Header from "./components/Header";
+import ChurchTimeline from "./components/ChurchTimeline";
 import ButtonContainer from "./components/ButtonContainer";
-import CurrentDay from "./components/CurrentDay";
 import VerseTypeButton from "./components/VerseTypeButton";
 import TheotokiaGame from "./components/TheotokiaGame";
 import BibleVerseGame from "./components/BibleVerseGame";
@@ -20,17 +25,28 @@ function App() {
 	return (
 		<div>
 			<Header />
-			<ButtonContainer setCurDay={setCurDay} setCurMonth={setCurMonth} />
-			<CurrentDay month={curMonth} day={curDay} />
-			<VerseTypeButton
-				isTheotokia={isTheotokia}
-				setIsTheotokia={setIsTheotokia}
-			/>
-			{isTheotokia ? (
-				<TheotokiaGame day={curDay} month={curMonth} />
-			) : (
-				<BibleVerseGame day={curDay} month={curMonth} />
-			)}
+			{/* <ChurchTimeline /> */}
+
+			{/* TODO ucomment this isInCurAdvent condition to only open game during advent */}
+			{/* {isInCurAdvent() && ( */}
+			<div>
+				<ButtonContainer
+					curDay={curDay}
+					curMonth={curMonth}
+					setCurDay={setCurDay}
+					setCurMonth={setCurMonth}
+				/>
+				<VerseTypeButton
+					isTheotokia={isTheotokia}
+					setIsTheotokia={setIsTheotokia}
+				/>
+				{isTheotokia ? (
+					<TheotokiaGame day={curDay} month={curMonth} />
+				) : (
+					<BibleVerseGame day={curDay} month={curMonth} />
+				)}
+			</div>
+			{/* )} */}
 			<Footer />
 		</div>
 	);

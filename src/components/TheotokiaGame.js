@@ -15,25 +15,27 @@ import SecondaryVerse from "./SecondaryVerse";
 const TheotokiaGame = ({ day, month }) => {
 	const info = theotokia[0]; // TODO change this to find the theotokia based on day and month
 
-	const [chosenBook, setChosenBook] = useState(null); // start with the user not choosing any book in the Bible
-	const [chosenChapter, setChosenChapter] = useState(0); // start with the user not choosing any chapter in any book in the Bible
-	const [chosenNumber, setChosenNumber] = useState(0); // start with the user not choosing and nymber in any chapter in any book in the Bible
+	const [showBiblicalVerse, setShowBiblicalVerse] = useState(false); // start by not showing the Biblical verse
 
 	return (
 		<div>
-			<MainVerse text={info.theotokiaVerse} />
+			<MainVerse text={info.theotokiaVerse} isTheotokia />
 			<TheotokiaRefPicker
 				correctDay={info.theotokiaDay}
 				correctPart={info.theotokiaPart}
 			/>
 			<p>Now, try to find this in a verse in the Bible</p>
+			{showBiblicalVerse ? (
+				<MainVerse text={info.verseBody} />
+			) : (
+				<button onClick={() => setShowBiblicalVerse(true)}>
+					I am puzzled, can you please show me the verse?
+				</button>
+			)}
 			<BibleRefPicker
-				book={chosenBook}
-				setBook={setChosenBook}
-				chapter={chosenChapter}
-				setChapter={setChosenChapter}
-				number={chosenNumber}
-				setNumber={setChosenNumber}
+				correctBook={info.verseBook}
+				correctChapter={info.verseChapter}
+				correctNumber={info.verseNumber}
 			/>
 		</div>
 	);

@@ -11,3 +11,5 @@ You can either:
 
 - run `yarn run deploy`
 - check to see if the updates are refelcted on `https://cymourad.github.io/43-days-till-christmas`
+
+> Reference: `https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f`
