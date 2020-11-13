@@ -27,13 +27,6 @@ const Header = () => {
 			</Toolbar>
 		</AppBar>
 	);
-
-	return (
-		<div>
-			<p>{getDaysTillUpcomingChristmas()} days till Christmas</p>
-			<p>"Christ is Born, Glorify Him"</p>
-		</div>
-	);
 };
 
 export default Header;

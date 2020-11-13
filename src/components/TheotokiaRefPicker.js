@@ -95,7 +95,10 @@ const TheotokiaRefPicker = ({
 			{!isCorrectAnswer && !requestedHint && (
 				<Button
 					variant="contained"
-					onClick={() => setRequestedHint(true)}
+					onClick={() => {
+						setRequestedHint(true);
+						setChosenDay(correctDay);
+					}}
 					className={classes.helpButton}
 				>
 					I need help
