@@ -130,19 +130,22 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 			<br />
 
 			{isCorrectAnswer ? (
-				<Button
-					className={classes.helpButton}
-					variant="contained"
-					color="primary"
-					onClick={(e) => {
-						e.preventDefault();
-						window.open(
-							`https://catenabible.com/${correctBook}/${correctChapter}/${correctNumber}`
-						);
-					}}
-				>
-					Explore this verse futher
-				</Button>
+				<>
+					<p>Good Job!!</p>
+					<Button
+						className={classes.helpButton}
+						variant="contained"
+						color="primary"
+						onClick={(e) => {
+							e.preventDefault();
+							window.open(
+								`https://catenabible.com/${correctBook}/${correctChapter}/${correctNumber}`
+							);
+						}}
+					>
+						Explore this verse futher
+					</Button>
+				</>
 			) : !bookHintGiven ? (
 				<Button
 					className={classes.helpButton}
@@ -153,7 +156,7 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 						setChosenBook(correctBook);
 					}}
 				>
-					I need a hint!
+					I need help!
 				</Button>
 			) : !chapterHintGiven ? (
 				<Button
@@ -165,7 +168,7 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 						setChosenChapter(correctChapter);
 					}}
 				>
-					I need a second hint
+					I need more help!
 				</Button>
 			) : null}
 		</div>
