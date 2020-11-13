@@ -13,6 +13,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
+// TODO choose a random picture every time
 import theotokos from "../static/theotokos_kiro_1.jpg";
 import annunciation from "../static/annunciation_kiro_1.jpg";
 import platytera from "../static/platytera_kiro_1.jpg";

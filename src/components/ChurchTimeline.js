@@ -93,7 +93,7 @@ const ChurchTimeline = () => {
 			endDate: new Date(2021, monthNumber.May, 27),
 		},
 		{
-			name: "Ascension/Pentecost",
+			name: "Ascension and Pentecost",
 			startDate: new Date(2021, monthNumber.May, 28),
 			endDate: new Date(2021, monthNumber.July, 12),
 		},
