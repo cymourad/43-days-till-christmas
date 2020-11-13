@@ -147,7 +147,7 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 				<Button
 					className={classes.helpButton}
 					variant="contained"
-					color="primary"
+					color="grey"
 					onClick={() => {
 						setBookHintGiven(true);
 						setChosenBook(correctBook);
@@ -159,7 +159,7 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 				<Button
 					className={classes.helpButton}
 					variant="containedd"
-					color="secondary"
+					color="grey"
 					onClick={() => {
 						setChapterHintGiven(true);
 						setChosenChapter(correctChapter);

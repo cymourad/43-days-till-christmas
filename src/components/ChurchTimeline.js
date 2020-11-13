@@ -63,8 +63,8 @@ const ChurchTimeline = () => {
 	];
 	const churchYearEvents = [
 		{
-			name: "New Year",
-			startDate: new Date(2020, monthNumber.September, 1),
+			name: "Coptic New Year",
+			startDate: new Date(2020, monthNumber.September, 11),
 			endDate: new Date(2020, monthNumber.November, 24),
 		},
 		{
@@ -75,32 +75,32 @@ const ChurchTimeline = () => {
 		{
 			name: "Epiphany",
 			startDate: new Date(2021, monthNumber.January, 8),
-			endDate: new Date(2021, monthNumber.February, 25),
+			endDate: new Date(2021, monthNumber.February, 21),
 		},
 		{
 			name: "Lent",
-			startDate: new Date(2021, monthNumber.February, 26),
-			endDate: new Date(2021, monthNumber.April, 10),
+			startDate: new Date(2021, monthNumber.February, 22),
+			endDate: new Date(2021, monthNumber.April, 24),
 		},
 		{
 			name: "Passion",
-			startDate: new Date(2021, monthNumber.April, 11),
-			endDate: new Date(2021, monthNumber.April, 18),
+			startDate: new Date(2021, monthNumber.April, 25),
+			endDate: new Date(2021, monthNumber.May, 1),
 		},
 		{
 			name: "Resurrection",
-			startDate: new Date(2021, monthNumber.April, 19),
-			endDate: new Date(2021, monthNumber.May, 27),
+			startDate: new Date(2021, monthNumber.May, 2),
+			endDate: new Date(2021, monthNumber.June, 9),
 		},
 		{
 			name: "Ascension and Pentecost",
-			startDate: new Date(2021, monthNumber.May, 28),
+			startDate: new Date(2021, monthNumber.June, 10),
 			endDate: new Date(2021, monthNumber.July, 12),
 		},
 		{
 			name: "Work of the Holy Spirit",
 			startDate: new Date(2021, monthNumber.July, 13),
-			endDate: new Date(2021, monthNumber.August, 31),
+			endDate: new Date(2021, monthNumber.September, 10),
 		},
 	];
 

@@ -80,7 +80,7 @@ const MainVerse = ({ text, isTheotokia }) => {
 						window.open(image.url);
 					}}
 				>
-					Explore Iconographer
+					Visit Iconographer
 				</Button>
 			</CardActions>
 		</Card>

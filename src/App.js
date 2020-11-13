@@ -25,7 +25,7 @@ function App() {
 	return (
 		<div>
 			<Header />
-			{/* <ChurchTimeline /> */}
+			<ChurchTimeline />
 
 			{/* TODO ucomment this isInCurAdvent condition to only open game during advent */}
 			{/* {isInCurAdvent() && ( */}

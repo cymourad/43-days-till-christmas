@@ -16,12 +16,9 @@ import catenaBookNames from "../resources/catenaBookNames";
 
 const useStyles = makeStyles({
 	root: {
-		minWidth: 275,
-	},
-	bullet: {
-		display: "inline-block",
-		margin: "0 2px",
-		transform: "scale(0.8)",
+		maxWidth: 350,
+		margin: "auto",
+		marginTop: 20,
 	},
 	title: {
 		fontSize: 14,
@@ -33,7 +30,6 @@ const useStyles = makeStyles({
 
 const SecondaryVerse = ({ text }) => {
 	const classes = useStyles();
-	const bull = <span className={classes.bullet}>•</span>;
 
 	return (
 		<Card className={classes.root}>
@@ -43,22 +39,29 @@ const SecondaryVerse = ({ text }) => {
 					color="textSecondary"
 					gutterBottom
 				>
-					Word of the Day
+					Let's find out more in Scripture ...
 				</Typography>
 				<Typography variant="h5" component="h2">
-					be{bull}nev{bull}o{bull}lent
+					{text}
 				</Typography>
-				<Typography className={classes.pos} color="textSecondary">
-					adjective
-				</Typography>
+				<br />
 				<Typography variant="body2" component="p">
-					well meaning and kindly.
-					<br />
-					{'"a benevolent smile"'}
+					Can you locate this verse in Scripture?
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button size="small">Learn More</Button>
+				<Button
+					onClick={(e) => {
+						e.preventDefault();
+						window.open(
+							"https://www.biblegateway.com/versions/New-King-James-Version-NKJV-Bible/#booklist"
+						);
+					}}
+					size="small"
+					color="primary"
+				>
+					Open Scripture
+				</Button>
 			</CardActions>
 		</Card>
 	);
