@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/43-days-till-christmas/static/css/main.70921530.chunk.css",
-    "main.js": "/43-days-till-christmas/static/js/main.9bd02183.chunk.js",
-    "main.js.map": "/43-days-till-christmas/static/js/main.9bd02183.chunk.js.map",
-    "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.83c646a9.js",
-    "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.83c646a9.js.map",
-    "static/js/2.fe290fd5.chunk.js": "/43-days-till-christmas/static/js/2.fe290fd5.chunk.js",
-    "static/js/2.fe290fd5.chunk.js.map": "/43-days-till-christmas/static/js/2.fe290fd5.chunk.js.map",
-    "static/js/3.41520639.chunk.js": "/43-days-till-christmas/static/js/3.41520639.chunk.js",
-    "static/js/3.41520639.chunk.js.map": "/43-days-till-christmas/static/js/3.41520639.chunk.js.map",
+    "main.js": "/43-days-till-christmas/static/js/main.d3e71a0e.chunk.js",
+    "main.js.map": "/43-days-till-christmas/static/js/main.d3e71a0e.chunk.js.map",
+    "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.3f33c445.js",
+    "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.3f33c445.js.map",
+    "static/js/2.2376a422.chunk.js": "/43-days-till-christmas/static/js/2.2376a422.chunk.js",
+    "static/js/2.2376a422.chunk.js.map": "/43-days-till-christmas/static/js/2.2376a422.chunk.js.map",
+    "static/js/3.db733ef4.chunk.js": "/43-days-till-christmas/static/js/3.db733ef4.chunk.js",
+    "static/js/3.db733ef4.chunk.js.map": "/43-days-till-christmas/static/js/3.db733ef4.chunk.js.map",
     "index.html": "/43-days-till-christmas/index.html",
     "static/css/main.70921530.chunk.css.map": "/43-days-till-christmas/static/css/main.70921530.chunk.css.map",
-    "static/js/2.fe290fd5.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.fe290fd5.chunk.js.LICENSE.txt",
+    "static/js/2.2376a422.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.2376a422.chunk.js.LICENSE.txt",
     "static/media/annunciation_kiro_1.ae4d4674.jpg": "/43-days-till-christmas/static/media/annunciation_kiro_1.ae4d4674.jpg",
     "static/media/burial_makary_1.2a47770f.jpg": "/43-days-till-christmas/static/media/burial_makary_1.2a47770f.jpg",
     "static/media/platytera_kiro_1.14066bdf.jpg": "/43-days-till-christmas/static/media/platytera_kiro_1.14066bdf.jpg",
@@ -22,9 +22,9 @@
     "static/media/theotokos_makary_3.d01f757f.jpg": "/43-days-till-christmas/static/media/theotokos_makary_3.d01f757f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.83c646a9.js",
-    "static/js/2.fe290fd5.chunk.js",
+    "static/js/runtime-main.3f33c445.js",
+    "static/js/2.2376a422.chunk.js",
     "static/css/main.70921530.chunk.css",
-    "static/js/main.9bd02183.chunk.js"
+    "static/js/main.d3e71a0e.chunk.js"
   ]
 }
