@@ -13,9 +13,14 @@ import BibleRefPicker from "./BibleRefPicker";
 import SecondaryVerse from "./SecondaryVerse";
 
 const TheotokiaGame = ({ day, month }) => {
-	const info = theotokia[0]; // TODO change this to find the theotokia based on day and month
+	const infoAll = theotokia.filter(function (game) {
+		return game.month == month && game.day == day;
+	}); // find the values of today's game
 
-	const [showBiblicalVerse, setShowBiblicalVerse] = useState(false); // start by not showing the Biblical verse
+	// if an error occurs in finding today's game, fall back on the game of the first day (should never happen)
+	const info = infoAll.length > 0 ? infoAll[0] : theotokia[0];
+
+	const [foundTheTheotokia, setFoundTheTheotokia] = useState(false); // start by not showing the Biblical verse
 
 	return (
 		<div>
@@ -23,20 +28,18 @@ const TheotokiaGame = ({ day, month }) => {
 			<TheotokiaRefPicker
 				correctDay={info.theotokiaDay}
 				correctPart={info.theotokiaPart}
+				setGotCorrectAnswer={setFoundTheTheotokia}
 			/>
-			<p>Now, try to find this in a verse in the Bible</p>
-			{showBiblicalVerse ? (
-				<MainVerse text={info.verseBody} />
-			) : (
-				<button onClick={() => setShowBiblicalVerse(true)}>
-					I am puzzled, can you please show me the verse?
-				</button>
+			{foundTheTheotokia && (
+				<>
+					<SecondaryVerse text={info.verseBody} />
+					<BibleRefPicker
+						correctBook={info.verseBook}
+						correctChapter={info.verseChapter}
+						correctNumber={info.verseNumber}
+					/>
+				</>
 			)}
-			<BibleRefPicker
-				correctBook={info.verseBook}
-				correctChapter={info.verseChapter}
-				correctNumber={info.verseNumber}
-			/>
 		</div>
 	);
 };

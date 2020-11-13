@@ -13,14 +13,13 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-// TODO choose a random picture every time
-import theotokos from "../static/theotokos_kiro_1.jpg";
-import annunciation from "../static/annunciation_kiro_1.jpg";
-import platytera from "../static/platytera_kiro_1.jpg";
+import images from "../static/images";
+
+const MAX_WIDTH = 350; //pixels
 
 const useStyles = makeStyles({
 	root: {
-		maxWidth: 345,
+		maxWidth: MAX_WIDTH,
 		margin: "auto",
 		marginTop: 20,
 	},
@@ -31,10 +30,16 @@ const useStyles = makeStyles({
 
 const MainVerse = ({ text, isTheotokia }) => {
 	const classes = useStyles();
+	const image = images[Math.floor(Math.random() * images.length)];
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
-				<CardMedia className={classes.media} image={theotokos} />
+				<CardMedia
+					className={classes.media}
+					style={{ height: (MAX_WIDTH * image.height) / image.width }}
+					image={image.source}
+					title={image.title}
+				/>
 				<CardContent>
 					<Typography variant="body1" color="textSecondary" component="p">
 						{text}
@@ -67,13 +72,18 @@ const MainVerse = ({ text, isTheotokia }) => {
 						Open Scripture
 					</Button>
 				)}
+				<Button
+					size="small"
+					color="primary"
+					onClick={(e) => {
+						e.preventDefault();
+						window.open(image.url);
+					}}
+				>
+					Explore Iconographer
+				</Button>
 			</CardActions>
 		</Card>
-	);
-	return (
-		<div>
-			<p>{text}</p>
-		</div>
 	);
 };
 

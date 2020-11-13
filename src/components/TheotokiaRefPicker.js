@@ -29,7 +29,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const TheotokiaRefPicker = ({ correctDay, correctPart }) => {
+const TheotokiaRefPicker = ({
+	correctDay,
+	correctPart,
+	setGotCorrectAnswer,
+}) => {
 	const classes = useStyles();
 
 	const [chosenDay, setChosenDay] = useState(null); // start with the user not choosing any day
@@ -48,6 +52,7 @@ const TheotokiaRefPicker = ({ correctDay, correctPart }) => {
 	}));
 
 	const isCorrectAnswer = chosenDay == correctDay && chosenPart == correctPart;
+	setGotCorrectAnswer(isCorrectAnswer);
 
 	return (
 		<div>
