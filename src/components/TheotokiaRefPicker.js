@@ -9,6 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
+import FormHelperText from "@material-ui/core/FormHelperText";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 
@@ -74,6 +75,9 @@ const TheotokiaRefPicker = ({
 							<MenuItem value={dayOption.value}>{dayOption.label}</MenuItem>
 						))}
 				</Select>
+				{requestedHint && (
+					<FormHelperText>Hint: Open Psalmody above</FormHelperText>
+				)}
 			</FormControl>
 			<FormControl className={classes.formControl}>
 				<InputLabel id="part-select-label">Part</InputLabel>
@@ -104,6 +108,7 @@ const TheotokiaRefPicker = ({
 					I need help
 				</Button>
 			)}
+			{isCorrectAnswer && <p>Well done!</p>}
 		</div>
 	);
 	// return (

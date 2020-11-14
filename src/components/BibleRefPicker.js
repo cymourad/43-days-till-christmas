@@ -13,6 +13,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
+import FormHelperText from "@material-ui/core/FormHelperText";
 import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 
@@ -39,8 +40,8 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 	const [chosenChapter, setChosenChapter] = useState(null); // start with the user not choosing any chapter in any book in the Bible
 	const [chosenNumber, setChosenNumber] = useState(null); // start with the user not choosing and nymber in any chapter in any book in the Bible
 
-	const [bookHintGiven, setBookHintGiven] = useState(false); // start without giving a hint about the book
-	const [chapterHintGiven, setChapterHintGiven] = useState(false); // start without giving a hint about the chapter
+	const [bookAndChapterHintGiven, setBookAndChapterHintGiven] = useState(false); // start without giving a hint about the book and chapter
+	const [numberHintGiven, setNumberHintGiven] = useState(false); // start without reducing the number of chapters
 
 	let bookOptions = [];
 	for (const book in catenaBookNames) {
@@ -83,9 +84,9 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 					id="book-select"
 					value={chosenBook}
 					onChange={(e) => setChosenBook(e.target.value)}
-					disabled={isCorrectAnswer}
+					disabled={isCorrectBook}
 				>
-					{bookHintGiven ? (
+					{bookAndChapterHintGiven ? (
 						<MenuItem value={correctBook}>
 							{catenaBookNames[correctBook]}
 						</MenuItem>
@@ -95,6 +96,9 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 						))
 					)}
 				</Select>
+				{bookAndChapterHintGiven && (
+					<FormHelperText>Hint: Open Scripture above</FormHelperText>
+				)}
 			</FormControl>
 
 			<FormControl className={classes.formControl}>
@@ -102,11 +106,11 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 				<Select
 					labelId="chapter-select-label"
 					id="chapter-select"
-					value={chapterHintGiven ? correctChapter : chosenChapter}
+					value={chosenChapter}
 					onChange={(e) => setChosenChapter(e.target.value)}
-					disabled={isCorrectAnswer}
+					disabled={isCorrectChapter}
 				>
-					{chapterHintGiven ? (
+					{bookAndChapterHintGiven ? (
 						<MenuItem value={correctChapter}>{correctChapter}</MenuItem>
 					) : (
 						chapterOptions
@@ -125,12 +129,26 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 					id="number-select"
 					value={chosenNumber}
 					onChange={(e) => setChosenNumber(e.target.value)}
-					disabled={isCorrectAnswer}
+					disabled={isCorrectNmber}
 				>
-					{numberOptions.map((number) => (
-						<MenuItem value={number.value}>{number.label}</MenuItem>
-					))}
+					{numberOptions
+						.slice(
+							numberHintGiven
+								? correctNumber - 5 >= 0
+									? correctNumber - 5
+									: 0
+								: 0,
+							numberHintGiven ? correctNumber + 5 : 176
+						)
+						.map((number) => (
+							<MenuItem value={number.value}>{number.label}</MenuItem>
+						))}
 				</Select>
+				{numberHintGiven && (
+					<FormHelperText>
+						Hint: There are less verses to choose form
+					</FormHelperText>
+				)}
 			</FormControl>
 
 			<br />
@@ -152,29 +170,27 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 						Explore this verse futher
 					</Button>
 				</>
-			) : !bookHintGiven ? (
+			) : !bookAndChapterHintGiven ? (
 				<Button
 					className={classes.helpButton}
 					variant="contained"
 					color="grey"
 					onClick={() => {
-						setBookHintGiven(true);
-						setChosenBook(correctBook);
+						setBookAndChapterHintGiven(true);
 					}}
 				>
-					I need help!
+					I do not know where to start 🤔
 				</Button>
-			) : !chapterHintGiven ? (
+			) : !numberHintGiven ? (
 				<Button
 					className={classes.helpButton}
-					variant="containedd"
+					variant="contained"
 					color="grey"
 					onClick={() => {
-						setChapterHintGiven(true);
-						setChosenChapter(correctChapter);
+						setNumberHintGiven(true);
 					}}
 				>
-					I need more help!
+					There are too many verses to choose from!
 				</Button>
 			) : null}
 		</div>
