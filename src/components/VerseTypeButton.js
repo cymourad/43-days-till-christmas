@@ -3,43 +3,42 @@
  */
 
 import React from "react";
-import Switch from "@material-ui/core/Switch";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormControl from "@material-ui/core/FormControl";
 
-const VerseTypeButton = ({ isTheotokia, setIsTheotokia }) => {
+const RadioButtonsGroup = ({ isTheotokia, setIsTheotokia }) => {
+	const handleChange = (event) => {
+		console.log(event);
+		setIsTheotokia(event.target.value == "true");
+	};
+
 	return (
-		<Typography component="div">
-			<Grid
-				component="label"
-				container
-				alignItems="center"
-				spacing={1}
-				justify="center"
+		<FormControl component="fieldset">
+			<RadioGroup
+				aria-label="game-type"
+				name="game type"
+				value={isTheotokia}
+				onChange={handleChange}
+				row
 			>
-				<Grid item>Explore Scripture</Grid>
-				<Grid item>
-					<Switch
-						checked={isTheotokia}
-						onChange={(e) => setIsTheotokia(e.target.checked)}
-					/>
-				</Grid>
-				<Grid item>Explore the Thetokia</Grid>
-			</Grid>
-		</Typography>
-
-		// <Switch
-		// 	checked={isTheotokia}
-		// 	onChange={(e) => setIsTheotokia(e.target.checked)}
-		// 	label="Explore the Thetokia"
-		// />
-	);
-
-	return (
-		<button onClick={() => setIsTheotokia(!isTheotokia)}>
-			Change to {isTheotokia ? "Bible Prophecies and Praises" : "Theotokia"}
-		</button>
+				<FormControlLabel
+					value={false}
+					control={<Radio />}
+					label="Explore Scripture"
+					labelPlacement="start"
+				/>
+				<FormControlLabel
+					style={{ paddingLeft: 10 }}
+					value={true}
+					control={<Radio />}
+					label="Explore Theotokia"
+					labelPlacement="end"
+				/>
+			</RadioGroup>
+		</FormControl>
 	);
 };
 
-export default VerseTypeButton;
+export default RadioButtonsGroup;
