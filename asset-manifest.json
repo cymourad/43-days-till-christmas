@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/43-days-till-christmas/static/css/main.70921530.chunk.css",
-    "main.js": "/43-days-till-christmas/static/js/main.ed90aa40.chunk.js",
-    "main.js.map": "/43-days-till-christmas/static/js/main.ed90aa40.chunk.js.map",
-    "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.53198c54.js",
-    "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.53198c54.js.map",
-    "static/js/2.9d8f70b6.chunk.js": "/43-days-till-christmas/static/js/2.9d8f70b6.chunk.js",
-    "static/js/2.9d8f70b6.chunk.js.map": "/43-days-till-christmas/static/js/2.9d8f70b6.chunk.js.map",
-    "static/js/3.2d9d4832.chunk.js": "/43-days-till-christmas/static/js/3.2d9d4832.chunk.js",
-    "static/js/3.2d9d4832.chunk.js.map": "/43-days-till-christmas/static/js/3.2d9d4832.chunk.js.map",
+    "main.js": "/43-days-till-christmas/static/js/main.795b9e6f.chunk.js",
+    "main.js.map": "/43-days-till-christmas/static/js/main.795b9e6f.chunk.js.map",
+    "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.5fbae13e.js",
+    "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.5fbae13e.js.map",
+    "static/js/2.c435f745.chunk.js": "/43-days-till-christmas/static/js/2.c435f745.chunk.js",
+    "static/js/2.c435f745.chunk.js.map": "/43-days-till-christmas/static/js/2.c435f745.chunk.js.map",
+    "static/js/3.2dc8b4ab.chunk.js": "/43-days-till-christmas/static/js/3.2dc8b4ab.chunk.js",
+    "static/js/3.2dc8b4ab.chunk.js.map": "/43-days-till-christmas/static/js/3.2dc8b4ab.chunk.js.map",
     "index.html": "/43-days-till-christmas/index.html",
     "static/css/main.70921530.chunk.css.map": "/43-days-till-christmas/static/css/main.70921530.chunk.css.map",
-    "static/js/2.9d8f70b6.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.9d8f70b6.chunk.js.LICENSE.txt",
+    "static/js/2.c435f745.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.c435f745.chunk.js.LICENSE.txt",
     "static/media/advent_competition.5a62fa14.pdf": "/43-days-till-christmas/static/media/advent_competition.5a62fa14.pdf",
     "static/media/annunciation_kiro_1.ae4d4674.jpg": "/43-days-till-christmas/static/media/annunciation_kiro_1.ae4d4674.jpg",
     "static/media/burial_makary_1.2a47770f.jpg": "/43-days-till-christmas/static/media/burial_makary_1.2a47770f.jpg",
@@ -23,9 +23,9 @@
     "static/media/theotokos_makary_3.d01f757f.jpg": "/43-days-till-christmas/static/media/theotokos_makary_3.d01f757f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.53198c54.js",
-    "static/js/2.9d8f70b6.chunk.js",
+    "static/js/runtime-main.5fbae13e.js",
+    "static/js/2.c435f745.chunk.js",
     "static/css/main.70921530.chunk.css",
-    "static/js/main.ed90aa40.chunk.js"
+    "static/js/main.795b9e6f.chunk.js"
   ]
 }
