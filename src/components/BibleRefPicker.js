@@ -63,6 +63,12 @@ const BibleRefPicker = ({ correctBook, correctChapter, correctNumber }) => {
 		})
 	);
 
+	const isCorrectBook = chosenBook === correctBook;
+
+	const isCorrectChapter = chosenChapter === correctChapter;
+
+	const isCorrectNmber = chosenNumber === correctNumber;
+
 	const isCorrectAnswer =
 		chosenBook === correctBook &&
 		chosenChapter === correctChapter &&

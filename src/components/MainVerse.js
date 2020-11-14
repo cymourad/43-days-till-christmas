@@ -15,6 +15,8 @@ import Typography from "@material-ui/core/Typography";
 
 import images from "../static/images";
 
+import { dayNumber } from "../resources/daysOfTheWeek";
+
 const MAX_WIDTH = 350; //pixels
 
 const useStyles = makeStyles({
@@ -28,9 +30,17 @@ const useStyles = makeStyles({
 	},
 });
 
-const MainVerse = ({ text, isTheotokia }) => {
+const MainVerse = ({
+	text,
+	isTheotokia,
+	theotokiaDay,
+	theotokiaPart,
+	verseBook,
+	verseChapter,
+}) => {
 	const classes = useStyles();
 	const image = images[Math.floor(Math.random() * images.length)];
+
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
@@ -53,7 +63,11 @@ const MainVerse = ({ text, isTheotokia }) => {
 						color="primary"
 						onClick={(e) => {
 							e.preventDefault();
-							window.open("https://tasbeha.org/hymn_library/cat/214");
+							window.open(
+								theotokiaDay == dayNumber.Sunday
+									? sundayTheotokiaLinksforPart[theotokiaPart]
+									: psalmodyLinks[theotokiaDay]
+							);
 						}}
 					>
 						Open Psalmody
@@ -65,7 +79,7 @@ const MainVerse = ({ text, isTheotokia }) => {
 						onClick={(e) => {
 							e.preventDefault();
 							window.open(
-								"https://www.biblegateway.com/versions/New-King-James-Version-NKJV-Bible/#booklist"
+								`https://catenabible.com/${verseBook}/${verseChapter}`
 							);
 						}}
 					>
@@ -88,3 +102,34 @@ const MainVerse = ({ text, isTheotokia }) => {
 };
 
 export default MainVerse;
+
+const psalmodyLinks = {
+	0: "", // Sunday
+	1: "https://tasbeha.org/hymn_library/view/353", // Monday
+	2: "https://tasbeha.org/hymn_library/view/467", // Tuesday
+	3: "https://tasbeha.org/hymn_library/view/469", // Wednesday
+	4: "https://tasbeha.org/hymn_library/view/471", // Thursday
+	5: "https://tasbeha.org/hymn_library/view/146", // Friday
+	6: "https://tasbeha.org/hymn_library/view/359", // Saturday
+};
+
+const sundayTheotokiaLinksforPart = {
+	1: "https://tasbeha.org/hymn_library/view/476",
+	2: "https://tasbeha.org/hymn_library/view/476",
+	3: "https://tasbeha.org/hymn_library/view/476",
+	4: "https://tasbeha.org/hymn_library/view/476",
+	5: "https://tasbeha.org/hymn_library/view/476",
+	6: "https://tasbeha.org/hymn_library/view/476",
+	7: "https://tasbeha.org/hymn_library/view/139", // https://tasbeha.org/hymn_library/view/452 // cemoti has its own link
+	8: "https://tasbeha.org/hymn_library/view/140",
+	9: "https://tasbeha.org/hymn_library/view/140",
+	10: "https://tasbeha.org/hymn_library/view/479",
+	11: "https://tasbeha.org/hymn_library/view/479",
+	12: "https://tasbeha.org/hymn_library/view/479",
+	13: "https://tasbeha.org/hymn_library/view/479",
+	14: "https://tasbeha.org/hymn_library/view/479",
+	15: "https://tasbeha.org/hymn_library/view/479",
+	16: "https://tasbeha.org/hymn_library/view/481",
+	17: "https://tasbeha.org/hymn_library/view/481",
+	18: "https://tasbeha.org/hymn_library/view/481",
+};

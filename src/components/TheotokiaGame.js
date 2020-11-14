@@ -24,7 +24,12 @@ const TheotokiaGame = ({ day, month }) => {
 
 	return (
 		<div>
-			<MainVerse text={info.theotokiaVerse} isTheotokia />
+			<MainVerse
+				text={info.theotokiaVerse}
+				isTheotokia
+				theotokiaDay={info.theotokiaDay}
+				theotokiaPart={info.theotokiaPart}
+			/>
 			<TheotokiaRefPicker
 				correctDay={info.theotokiaDay}
 				correctPart={info.theotokiaPart}
@@ -32,7 +37,12 @@ const TheotokiaGame = ({ day, month }) => {
 			/>
 			{foundTheTheotokia && (
 				<>
-					<SecondaryVerse text={info.verseBody} />
+					<SecondaryVerse
+						text={info.verseBody}
+						link={info.link}
+						book={info.verseBook}
+						chapter={info.verseChapter}
+					/>
 					<BibleRefPicker
 						correctBook={info.verseBook}
 						correctChapter={info.verseChapter}

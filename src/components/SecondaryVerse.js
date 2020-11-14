@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 	},
 });
 
-const SecondaryVerse = ({ text }) => {
+const SecondaryVerse = ({ text, link, book, chapter }) => {
 	const classes = useStyles();
 
 	return (
@@ -39,23 +39,21 @@ const SecondaryVerse = ({ text }) => {
 					color="textSecondary"
 					gutterBottom
 				>
-					Let's find out more in Scripture ...
+					Let's explore {link} in Scripture ...
 				</Typography>
 				<Typography variant="h5" component="h2">
 					{text}
 				</Typography>
 				<br />
 				<Typography variant="body2" component="p">
-					Can you locate this verse in Scripture?
+					Can you find this verse in {catenaBookNames[book]} chapter {chapter}?
 				</Typography>
 			</CardContent>
 			<CardActions>
 				<Button
 					onClick={(e) => {
 						e.preventDefault();
-						window.open(
-							"https://www.biblegateway.com/versions/New-King-James-Version-NKJV-Bible/#booklist"
-						);
+						window.open(`https://catenabible.com/${book}/${chapter}`);
 					}}
 					size="small"
 					color="primary"

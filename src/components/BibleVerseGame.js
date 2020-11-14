@@ -29,7 +29,11 @@ const VerseGame = ({ day, month }) => {
 			>
 				Download Competition Sheet
 			</Button>
-			<MainVerse text={info.body} />
+			<MainVerse
+				text={info.body}
+				verseBook={info.book}
+				verseChapter={info.chapter}
+			/>
 			<BibleRefPicker
 				correctBook={info.book}
 				correctChapter={info.chapter}
