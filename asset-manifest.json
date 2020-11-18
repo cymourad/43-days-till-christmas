@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/43-days-till-christmas/static/css/main.70921530.chunk.css",
-    "main.js": "/43-days-till-christmas/static/js/main.795b9e6f.chunk.js",
-    "main.js.map": "/43-days-till-christmas/static/js/main.795b9e6f.chunk.js.map",
+    "main.js": "/43-days-till-christmas/static/js/main.0e426c4e.chunk.js",
+    "main.js.map": "/43-days-till-christmas/static/js/main.0e426c4e.chunk.js.map",
     "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.5fbae13e.js",
     "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.5fbae13e.js.map",
     "static/js/2.c435f745.chunk.js": "/43-days-till-christmas/static/js/2.c435f745.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/43-days-till-christmas/index.html",
     "static/css/main.70921530.chunk.css.map": "/43-days-till-christmas/static/css/main.70921530.chunk.css.map",
     "static/js/2.c435f745.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.c435f745.chunk.js.LICENSE.txt",
-    "static/media/advent_competition.5a62fa14.pdf": "/43-days-till-christmas/static/media/advent_competition.5a62fa14.pdf",
+    "static/media/advent_competition.6d0e3ced.pdf": "/43-days-till-christmas/static/media/advent_competition.6d0e3ced.pdf",
     "static/media/annunciation_kiro_1.ae4d4674.jpg": "/43-days-till-christmas/static/media/annunciation_kiro_1.ae4d4674.jpg",
     "static/media/burial_makary_1.2a47770f.jpg": "/43-days-till-christmas/static/media/burial_makary_1.2a47770f.jpg",
     "static/media/platytera_kiro_1.14066bdf.jpg": "/43-days-till-christmas/static/media/platytera_kiro_1.14066bdf.jpg",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.5fbae13e.js",
     "static/js/2.c435f745.chunk.js",
     "static/css/main.70921530.chunk.css",
-    "static/js/main.795b9e6f.chunk.js"
+    "static/js/main.0e426c4e.chunk.js"
   ]
 }
