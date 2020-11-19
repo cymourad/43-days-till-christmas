@@ -236,7 +236,7 @@ const verses = [
 		month: monthNumber.December,
 		day: 22,
 		book: "1tm",
-		chapter: 2,
+		chapter: 3,
 		number: 16,
 		body: "great is the mystery of godliness: God was manifested in the flesh,",
 	},
