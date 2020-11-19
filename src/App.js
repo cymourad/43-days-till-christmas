@@ -6,6 +6,7 @@ import { isInCurAdvent } from "./helpers/dateHelper";
 
 import Header from "./components/Header";
 import ChurchTimeline from "./components/ChurchTimeline";
+import GreatIsTheMysteryOfGodliness from "./components/GreatIsTheMysteryOfGodliness";
 import ButtonContainer from "./components/ButtonContainer";
 import VerseTypeButton from "./components/VerseTypeButton";
 import TheotokiaGame from "./components/TheotokiaGame";
@@ -20,12 +21,20 @@ function App() {
 	const [curMonth, setCurMonth] = useState(todayMonth);
 	const [curDay, setCurDay] = useState(todayDay);
 
-	const [isTheotokia, setIsTheotokia] = useState(true); // start user in theotokia mode, they can switch to bible verse mode
+	const [isTheotokia, setIsTheotokia] = useState(false); // TODO start user in theotokia mode, they can switch to bible verse mode
+
+	const [showMyFavVerse, setShowMyFavVerse] = useState(false); // start by not showing my favorite verse
 
 	return (
 		<div>
 			<Header />
+
 			<ChurchTimeline />
+
+			{/* <GreatIsTheMysteryOfGodliness
+				showAccordion={showMyFavVerse}
+				setShowAccordion={setShowMyFavVerse}
+			/> */}
 
 			{/* TODO ucomment this isInCurAdvent condition to only open game during advent */}
 			{/* {isInCurAdvent() && ( */}

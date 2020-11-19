@@ -1,18 +1,5 @@
 import { monthNumber } from "./monthsOfTheYear";
 
-const v = [
-	{
-		month: monthNumber.November,
-		day: 25,
-		body: "Christ is born",
-		book: "gn",
-		chapter: 1,
-		number: 1,
-		commentary: "Somthing deep",
-		author: "holy father",
-	},
-];
-
 const verses = [
 	{
 		month: monthNumber.November,
@@ -203,6 +190,184 @@ const verses = [
 		chapter: 3,
 		number: 8,
 		body: "For behold, I am bringing forth My Servant the BRANCH",
+	},
+	{
+		month: monthNumber.December,
+		day: 17,
+		book: "hos",
+		chapter: 11,
+		number: 1,
+		body: "And out of Egypt I called My son",
+	},
+	{
+		month: monthNumber.December,
+		day: 18,
+		book: "mt",
+		chapter: 1,
+		number: 25,
+		body: "And he called His name Jesus",
+	},
+	{
+		month: monthNumber.December,
+		day: 19,
+		book: "ps",
+		chapter: 89,
+		number: 26,
+		body: "You are my Father, my God, and the rock of my salvation.",
+	},
+	{
+		month: monthNumber.December,
+		day: 20,
+		book: "zec",
+		chapter: 13,
+		number: 9,
+		body: "They will call on My name, and I will answer them.",
+	},
+	{
+		month: monthNumber.December,
+		day: 21,
+		book: "mt",
+		chapter: 1,
+		number: 21,
+		body:
+			"And she will bring forth a Son, and you shall call His name Jesus, for He will save His people from their sins.",
+	},
+	{
+		month: monthNumber.December,
+		day: 22,
+		book: "1tm",
+		chapter: 2,
+		number: 16,
+		body: "great is the mystery of godliness: God was manifested in the flesh,",
+	},
+	{
+		month: monthNumber.December,
+		day: 23,
+		book: "gn",
+		chapter: 49,
+		number: 10,
+		body:
+			"The scepter shall not depart from Judah, nor a lawgiver from between his feet, until Shiloh comes; and to Him shall be the obedience of the people.",
+	},
+	{
+		month: monthNumber.December,
+		day: 24,
+		book: "mt",
+		chapter: 2,
+		number: 2,
+		body:
+			"Where is He who has been born King of the Jews? For we have seen His star in the East and have come to worship Him.",
+	},
+	{
+		month: monthNumber.December,
+		day: 25,
+		book: "ez",
+		chapter: 44,
+		number: 2,
+		body:
+			"And the Lord said to me, “This gate shall be shut; it shall not be opened, and no man shall enter by it, because the Lord God of Israel has entered by it; therefore it shall be shut.",
+	},
+	{
+		month: monthNumber.December,
+		day: 26,
+		book: "jn",
+		chapter: 3,
+		number: 17,
+		body:
+			"For God did not send His Son into the world to condemn the world, but that the world through Him might be saved.",
+	},
+	{
+		month: monthNumber.December,
+		day: 27,
+		book: "jn",
+		chapter: 10,
+		number: 9,
+		body: "I am the door. If anyone enters by Me, he will be saved,",
+	},
+	{
+		month: monthNumber.December,
+		day: 28,
+		book: "is",
+		chapter: 46,
+		number: 13,
+		body: "My salvation shall not linger.",
+	},
+	{
+		month: monthNumber.December,
+		day: 29,
+		book: "lk",
+		chapter: 1,
+		number: 69,
+		body:
+			"And has raised up a horn of salvation for us in the house of His servant David,",
+	},
+	{
+		month: monthNumber.December,
+		day: 30,
+		book: "ps",
+		chapter: 28,
+		number: 8,
+		body:
+			"The Lord is their strength, and He is the saving refuge of His anointed.",
+	},
+	{
+		month: monthNumber.December,
+		day: 31,
+		book: "gn",
+		chapter: 49,
+		number: 18,
+		body: "I have waited for your salvation, O Lord!",
+	},
+	{
+		month: monthNumber.January,
+		day: 1,
+		book: "2sm",
+		chapter: 22,
+		number: 51,
+		body:
+			"He is the tower of salvation to His king, and shows mercy to His anointed, to David and his descendants forevermore.",
+	},
+	{
+		month: monthNumber.January,
+		day: 2,
+		book: "mt",
+		chapter: 1,
+		number: 1,
+		body:
+			"The book of the genealogy of Jesus Christ, the Son of David, the Son of Abraham",
+	},
+	{
+		month: monthNumber.January,
+		day: 3,
+		book: "ps",
+		chapter: 118,
+		number: 14,
+		body: "The Lord is my strength and song, and He has become my salvation.",
+	},
+	{
+		month: monthNumber.January,
+		day: 4,
+		book: "ps",
+		chapter: 20,
+		number: 6,
+		body: "Now I know that the Lord saves His anointed;",
+	},
+	{
+		month: monthNumber.January,
+		day: 5,
+		book: "ps",
+		chapter: 13,
+		number: 5,
+		body:
+			"But I have trusted in Your mercy; my heart shall rejoice in Your salvation",
+	},
+	{
+		month: monthNumber.January,
+		day: 6,
+		book: "ps",
+		chapter: 27,
+		number: 1,
+		body: "The Lord is my light and my salvation; whom shall I fear?",
 	},
 	{
 		month: monthNumber.January,
