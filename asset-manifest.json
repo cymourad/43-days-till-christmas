@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/43-days-till-christmas/static/css/main.70921530.chunk.css",
-    "main.js": "/43-days-till-christmas/static/js/main.15f44870.chunk.js",
-    "main.js.map": "/43-days-till-christmas/static/js/main.15f44870.chunk.js.map",
+    "main.js": "/43-days-till-christmas/static/js/main.96f915b0.chunk.js",
+    "main.js.map": "/43-days-till-christmas/static/js/main.96f915b0.chunk.js.map",
     "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.6ab0665d.js",
     "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.6ab0665d.js.map",
-    "static/js/2.c0038a99.chunk.js": "/43-days-till-christmas/static/js/2.c0038a99.chunk.js",
-    "static/js/2.c0038a99.chunk.js.map": "/43-days-till-christmas/static/js/2.c0038a99.chunk.js.map",
+    "static/js/2.20aa0496.chunk.js": "/43-days-till-christmas/static/js/2.20aa0496.chunk.js",
+    "static/js/2.20aa0496.chunk.js.map": "/43-days-till-christmas/static/js/2.20aa0496.chunk.js.map",
     "static/js/3.4b321335.chunk.js": "/43-days-till-christmas/static/js/3.4b321335.chunk.js",
     "static/js/3.4b321335.chunk.js.map": "/43-days-till-christmas/static/js/3.4b321335.chunk.js.map",
     "index.html": "/43-days-till-christmas/index.html",
     "static/css/main.70921530.chunk.css.map": "/43-days-till-christmas/static/css/main.70921530.chunk.css.map",
-    "static/js/2.c0038a99.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.c0038a99.chunk.js.LICENSE.txt",
+    "static/js/2.20aa0496.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.20aa0496.chunk.js.LICENSE.txt",
     "static/media/advent_competition.ad7c8ac6.pdf": "/43-days-till-christmas/static/media/advent_competition.ad7c8ac6.pdf",
     "static/media/annunciation_kiro_1.ae4d4674.jpg": "/43-days-till-christmas/static/media/annunciation_kiro_1.ae4d4674.jpg",
     "static/media/burial_makary_1.2a47770f.jpg": "/43-days-till-christmas/static/media/burial_makary_1.2a47770f.jpg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6ab0665d.js",
-    "static/js/2.c0038a99.chunk.js",
+    "static/js/2.20aa0496.chunk.js",
     "static/css/main.70921530.chunk.css",
-    "static/js/main.15f44870.chunk.js"
+    "static/js/main.96f915b0.chunk.js"
   ]
 }
