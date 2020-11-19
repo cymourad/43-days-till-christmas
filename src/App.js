@@ -30,14 +30,14 @@ function App() {
 			{/* TODO ucomment this isInCurAdvent condition to only open game during advent */}
 			{/* {isInCurAdvent() && ( */}
 			<div>
-				{isTheotokia && (
-					<ButtonContainer
-						curDay={curDay}
-						curMonth={curMonth}
-						setCurDay={setCurDay}
-						setCurMonth={setCurMonth}
-					/>
-				)}
+				{/* {isTheotokia && ( */}
+				<ButtonContainer
+					curDay={curDay}
+					curMonth={curMonth}
+					setCurDay={setCurDay}
+					setCurMonth={setCurMonth}
+				/>
+				{/* )} */}
 				<VerseTypeButton
 					isTheotokia={isTheotokia}
 					setIsTheotokia={setIsTheotokia}
@@ -45,7 +45,8 @@ function App() {
 				{isTheotokia ? (
 					<TheotokiaGame day={curDay} month={curMonth} />
 				) : (
-					<BibleVerseGame day={todayDay} month={todayMonth} />
+					// <BibleVerseGame day={todayDay} month={todayMonth} />
+					<BibleVerseGame day={curDay} month={curMonth} />
 				)}
 			</div>
 			{/* )} */}

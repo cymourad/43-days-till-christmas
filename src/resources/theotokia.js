@@ -437,7 +437,7 @@ const theotokia = [
 		month: monthNumber.December,
 		day: 24,
 		theotokiaVerse:
-			"“For unto us a Child is born, unto us a Son is given, the government shall be, upon His shoulder.",
+			"For unto us a Child is born, unto us a Son is given, the government shall be, upon His shoulder.",
 		theotokiaDay: dayNumber.Monday,
 		theotokiaPart: 4,
 		verseBook: "is",
@@ -562,7 +562,7 @@ const theotokia = [
 		month: monthNumber.January,
 		day: 2,
 		theotokiaVerse:
-			"He would keep silent, for he cannot utter, he would make us, rise up for praise.",
+			"If someone contemplates, about you, O holy Virgin, and Mother of God.\nAnd about the Mystery, full of wonder, which dwelt in you, for our salvation.\nHe would keep silent, for he cannot utter, he would make us, rise up for praise.",
 		theotokiaDay: dayNumber.Tuesday,
 		theotokiaPart: 4,
 		verseBook: "ps",
@@ -627,6 +627,20 @@ const theotokia = [
 		verseBody:
 			"And the Lord said to me, 'This gate shall be shut; it shall not be opened, and no man shall enter by it, because the Lord God of Israel has entered by it; therefore it shall be shut. ",
 		link: "the door to the East as a symbol of the virginity of the Theotokos",
+	},
+	{
+		month: monthNumber.January,
+		day: 7,
+		theotokiaVerse:
+			"He did not cease to be divine, He came and became the Son of Man, for He is the true God, who came and saved us.",
+		theotokiaDay: dayNumber.Thursday,
+		theotokiaPart: 1,
+		verseBook: "jn",
+		verseChapter: 1,
+		verseNumber: 14,
+		verseBody:
+			"And the Word became flesh and dwelt among us, and we beheld His glory, the glory as of the only begotten of the Father, full of grace and truth.",
+		link: "the incarnation of the Lord for our salvation",
 	},
 ];
 
