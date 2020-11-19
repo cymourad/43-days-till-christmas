@@ -27,10 +27,9 @@ const RadioButtonsGroup = ({ isTheotokia, setIsTheotokia }) => {
 					value={false}
 					control={<Radio />}
 					label="Explore Scripture"
-					labelPlacement="start"
+					labelPlacement="end"
 				/>
 				<FormControlLabel
-					style={{ paddingLeft: 10 }}
 					value={true}
 					control={<Radio />}
 					label="Explore Theotokia"
