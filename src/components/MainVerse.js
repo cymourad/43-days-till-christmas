@@ -63,6 +63,7 @@ const MainVerse = ({
 						color="primary"
 						onClick={(e) => {
 							e.preventDefault();
+
 							window.open(
 								theotokiaDay == dayNumber.Sunday
 									? sundayTheotokiaLinksforPart[theotokiaPart]

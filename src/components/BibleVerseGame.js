@@ -10,7 +10,7 @@ import MainVerse from "./MainVerse";
 import BibleRefPicker from "./BibleRefPicker";
 
 import Button from "@material-ui/core/Button";
-import adventCompetition from "../static/advent_competition.pdf";
+// import adventCompetition from "../static/advent_competition.pdf";
 
 const VerseGame = ({ day, month }) => {
 	const infoAll = verses.filter(function (verse) {
@@ -21,14 +21,14 @@ const VerseGame = ({ day, month }) => {
 	const info = infoAll.length > 0 ? infoAll[0] : verses[0];
 	return (
 		<div>
-			<Button
+			{/* <Button
 				style={{ paddingTop: 15 }}
 				color="secondary"
 				href={adventCompetition}
 				download="advent_competition.pdf"
 			>
 				Download Competition Sheet
-			</Button>
+			</Button> */}
 			<MainVerse
 				text={info.body}
 				verseBook={info.book}
