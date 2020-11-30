@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/43-days-till-christmas/static/css/main.70921530.chunk.css",
-    "main.js": "/43-days-till-christmas/static/js/main.178e71e3.chunk.js",
-    "main.js.map": "/43-days-till-christmas/static/js/main.178e71e3.chunk.js.map",
+    "main.js": "/43-days-till-christmas/static/js/main.b105377d.chunk.js",
+    "main.js.map": "/43-days-till-christmas/static/js/main.b105377d.chunk.js.map",
     "runtime-main.js": "/43-days-till-christmas/static/js/runtime-main.6ab0665d.js",
     "runtime-main.js.map": "/43-days-till-christmas/static/js/runtime-main.6ab0665d.js.map",
     "static/js/2.9edcb595.chunk.js": "/43-days-till-christmas/static/js/2.9edcb595.chunk.js",
@@ -12,8 +12,10 @@
     "index.html": "/43-days-till-christmas/index.html",
     "static/css/main.70921530.chunk.css.map": "/43-days-till-christmas/static/css/main.70921530.chunk.css.map",
     "static/js/2.9edcb595.chunk.js.LICENSE.txt": "/43-days-till-christmas/static/js/2.9edcb595.chunk.js.LICENSE.txt",
+    "static/media/advent_competition.5d7e100b.docx": "/43-days-till-christmas/static/media/advent_competition.5d7e100b.docx",
     "static/media/advent_competition.d1a66093.pdf": "/43-days-till-christmas/static/media/advent_competition.d1a66093.pdf",
     "static/media/advent_competition_theotokia.b5387e5c.pdf": "/43-days-till-christmas/static/media/advent_competition_theotokia.b5387e5c.pdf",
+    "static/media/advent_competition_theotokia.c74d34fb.docx": "/43-days-till-christmas/static/media/advent_competition_theotokia.c74d34fb.docx",
     "static/media/annunciation_kiro_1.ae4d4674.jpg": "/43-days-till-christmas/static/media/annunciation_kiro_1.ae4d4674.jpg",
     "static/media/burial_makary_1.2a47770f.jpg": "/43-days-till-christmas/static/media/burial_makary_1.2a47770f.jpg",
     "static/media/platytera_kiro_1.14066bdf.jpg": "/43-days-till-christmas/static/media/platytera_kiro_1.14066bdf.jpg",
@@ -27,6 +29,6 @@
     "static/js/runtime-main.6ab0665d.js",
     "static/js/2.9edcb595.chunk.js",
     "static/css/main.70921530.chunk.css",
-    "static/js/main.178e71e3.chunk.js"
+    "static/js/main.b105377d.chunk.js"
   ]
 }
